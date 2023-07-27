@@ -1,5 +1,6 @@
-export default function checkFive(num: number) {
+export default function checkFive(num?: number) {
   let result = "";
+  if (!num) return result;
   if (num < 5) {
     result = num + " is less than 5.";
   } else if (num === 5) {
